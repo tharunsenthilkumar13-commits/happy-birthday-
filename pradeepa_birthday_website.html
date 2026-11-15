@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 16th Birthday, Pradeepa ✨👑🧸</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --rose-gold: #f4c2c2;
+            --gold-light: #fde68a;
+            --deep-velvet: #1f0510;
+        }
+
+        body {
+            background: radial-gradient(circle at 50% 20%, #4c0d27 0%, #260513 55%, #140209 100%);
+            color: #ffe4e6;
+            font-family: 'Cormorant Garamond', serif;
+            overflow-x: hidden;
+            selection-background-color: #fb7185;
+            selection-color: #ffffff;
+        }
+
+        .font-cursive { font-family: 'Great Vibes', cursive; }
+        .font-royal { font-family: 'Cinzel Decorative', serif; }
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-sans-light { font-family: 'Montserrat', sans-serif; }
+
+        /* Shimmering Gold & Rose Text Gradients */
+        .text-gold-shimmer {
+            background: linear-gradient(90deg, #fff1f2 0%, #fde68a 25%, #f43f5e 50%, #fde68a 75%, #fff1f2 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 5s linear infinite;
+        }
+
+        .text-royal-gold {
+            background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #fb7185 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        /* Luxury Royal Card Frame */
+        .royal-card {
+            background: linear-gradient(145deg, rgba(76, 13, 39, 0.78) 0%, rgba(31, 5, 16, 0.92) 100%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(253, 230, 138, 0.35);
+            box-shadow: 
+                0 25px 60px rgba(0, 0, 0, 0.7),
+                0 0 40px rgba(244, 63, 94, 0.25),
+                inset 0 0 25px rgba(253, 230, 138, 0.12);
+            position: relative;
+        }
+
+        .royal-card::before {
+            content: '';
+            position: absolute;
+            inset: 8px;
+            border: 1px dashed rgba(251, 113, 133, 0.4);
+            border-radius: inherit;
+            pointer-events: none;
+        }
+
+        /* Glassmorphism Story Cards */
+        .story-card {
+            background: linear-gradient(135deg, rgba(255, 228, 230, 0.08) 0%, rgba(159, 18, 57, 0.18) 100%);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(253, 164, 175, 0.28);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+            transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+        }
+
+        .story-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(253, 230, 138, 0.5);
+            box-shadow: 0 20px 45px rgba(225, 29, 72, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Floating & Bouncing Animations */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-14px) rotate(4deg); }
+        }
+
+        @keyframes floatReverse {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(12px) rotate(-4deg); }
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 25px rgba(244, 63, 94, 0.4), 0 0 50px rgba(253, 230, 138, 0.2); }
+            50% { box-shadow: 0 0 40px rgba(244, 63, 94, 0.8), 0 0 80px rgba(253, 230, 138, 0.45); }
+        }
+
+        .animate-float-slow { animation: floatSlow 4.5s ease-in-out infinite; }
+        .animate-float-reverse { animation: floatReverse 5s ease-in-out infinite; }
+        .animate-pulse-glow { animation: pulseGlow 3s infinite; }
+
+        /* Hero Text Reveal */
+        .animate-birthday {
+            opacity: 0;
+            animation: bdayFadeIn 1.4s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
+        }
+
+        @keyframes bdayFadeIn {
+            0% { opacity: 0; transform: translateY(35px) scale(0.95); filter: blur(8px); }
+            100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+        }
+
+        /* Grand Polaroid Image Styling */
+        .polaroid {
+            background: linear-gradient(to bottom, #ffffff 0%, #fff9fb 100%);
+            padding: 14px 14px 52px 14px;
+            box-shadow: 
+                0 20px 45px rgba(0, 0, 0, 0.6), 
+                0 0 25px rgba(251, 113, 133, 0.25),
+                inset 0 0 0 1px rgba(244, 63, 94, 0.15);
+            border-radius: 8px;
+            width: 88%;
+            max-width: 330px;
+            margin: 3rem auto;
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+            position: relative;
+            z-index: 10;
+            cursor: pointer;
+        }
+
+        .polaroid::after {
+            content: '';
+            position: absolute;
+            inset: 6px;
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            border-radius: 4px;
+            pointer-events: none;
+        }
+
+        .polaroid img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            object-fit: cover;
+            aspect-ratio: 4/5;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .polaroid:hover {
+            transform: scale(1.07) rotate(0deg) !important;
+            box-shadow: 0 30px 65px rgba(0, 0, 0, 0.8), 0 0 40px rgba(251, 113, 133, 0.5);
+            z-index: 30;
+        }
+
+        /* Cute Washi Tape on Top of Polaroids */
+        .washi-tape {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-2deg);
+            width: 110px;
+            height: 28px;
+            background: rgba(251, 113, 133, 0.45);
+            backdrop-filter: blur(4px);
+            border-left: 2px dotted rgba(255,255,255,0.6);
+            border-right: 2px dotted rgba(255,255,255,0.6);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            z-index: 25;
+        }
+
+        /* Text Glows */
+        .text-glow {
+            text-shadow: 0 0 25px rgba(251, 113, 133, 0.75), 0 0 50px rgba(225, 29, 72, 0.4);
+        }
+
+        .gold-glow {
+            text-shadow: 0 0 18px rgba(253, 230, 138, 0.65);
+        }
+
+        /* Floating Background Particles */
+        .heart-particle {
+            position: fixed;
+            bottom: -10vh;
+            pointer-events: none;
+            animation: floatUp linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0) translateX(0) rotate(0deg) scale(0.8); opacity: 0; }
+            15% { opacity: 0.85; }
+            50% { transform: translateY(-55vh) translateX(20px) rotate(180deg) scale(1.05); }
+            85% { opacity: 0.85; }
+            100% { transform: translateY(-115vh) translateX(-15px) rotate(360deg) scale(1.2); opacity: 0; }
+        }
+
+        /* Ambient Bokeh Lights */
+        .bokeh {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(50px);
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.35;
+            animation: pulseBokeh 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulseBokeh {
+            0% { transform: scale(1) translate(0, 0); opacity: 0.25; }
+            100% { transform: scale(1.3) translate(20px, -20px); opacity: 0.45; }
+        }
+
+        /* Cursor Sparkle */
+        .sparkle-trail {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            animation: fadeOutSparkle 0.9s ease-out forwards;
+        }
+
+        @keyframes fadeOutSparkle {
+            0% { transform: scale(1) translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: scale(0.2) translateY(25px) rotate(90deg); opacity: 0; }
+        }
+
+        /* Candle Flame Animation */
+        .flame {
+            animation: flicker 0.6s ease-in-out infinite alternate;
+            transform-origin: bottom center;
+        }
+        @keyframes flicker {
+            0% { transform: scale(1) rotate(-2deg); opacity: 0.95; }
+            100% { transform: scale(1.12, 0.92) rotate(2deg); opacity: 1; }
+        }
+    </style>
+</head>
+<body class="relative antialiased overflow-hidden">
+
+    <!-- Ambient Glowing Bokeh Background Circles -->
+    <div class="bokeh w-72 h-72 bg-rose-500 top-10 left-10"></div>
+    <div class="bokeh w-96 h-96 bg-amber-400/60 bottom-10 right-10" style="animation-delay: 2s;"></div>
+    <div class="bokeh w-64 h-64 bg-pink-500 top-1/2 left-1/3" style="animation-delay: 4s;"></div>
+
+    <!-- ======================================================= -->
+    <!-- GRAND ROYAL INTRO SCREEN (FIRST SLIDE)                  -->
+    <!-- ======================================================= -->
+    <div id="intro-screen" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[radial-gradient(circle_at_center,#3b0a1e_0%,#19030c_100%)] transition-all duration-1000 px-4 sm:px-6 text-center overflow-hidden">
+        
+        <!-- Decorative Background Floating Elements on Intro Screen -->
+        <div class="absolute inset-0 pointer-events-none overflow-hidden">
+            <span class="absolute top-[10%] left-[8%] text-3xl sm:text-5xl opacity-60 animate-float-slow">🧸</span>
+            <span class="absolute top-[14%] right-[10%] text-3xl sm:text-5xl opacity-60 animate-float-reverse">🌸</span>
+            <span class="absolute bottom-[15%] left-[12%] text-3xl sm:text-5xl opacity-60 animate-float-reverse">🌹</span>
+            <span class="absolute bottom-[12%] right-[8%] text-3xl sm:text-5xl opacity-60 animate-float-slow">🧸</span>
+            <span class="absolute top-[45%] left-[4%] text-2xl sm:text-4xl opacity-50 animate-pulse">🎀</span>
+            <span class="absolute top-[42%] right-[5%] text-2xl sm:text-4xl opacity-50 animate-pulse">🦋</span>
+            <span class="absolute top-[22%] left-[25%] text-xl opacity-40 animate-ping">✨</span>
+            <span class="absolute bottom-[25%] right-[25%] text-xl opacity-40 animate-ping" style="animation-delay: 1s;">✨</span>
+        </div>
+
+        <!-- Luxury Invitation Card -->
+        <div class="royal-card max-w-2xl w-full rounded-3xl p-8 sm:p-12 md:p-14 relative z-10 mx-4">
+            
+            <!-- Corner Ribbons & Flowers -->
+            <div class="absolute -top-5 -left-4 text-3xl sm:text-4xl transform -rotate-12 drop-shadow-lg">🎀</div>
+            <div class="absolute -top-5 -right-4 text-3xl sm:text-4xl transform rotate-12 drop-shadow-lg">🌸</div>
+            <div class="absolute -bottom-5 -left-4 text-3xl sm:text-4xl transform rotate-12 drop-shadow-lg">🌹</div>
+            <div class="absolute -bottom-5 -right-4 text-3xl sm:text-4xl transform -rotate-12 drop-shadow-lg">🎀</div>
+
+            <!-- Cute Teddy Bear & Crown Badge at Top -->
+            <div class="flex flex-col items-center justify-center mb-6">
+                <div class="relative inline-flex items-center justify-center">
+                    <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-tr from-rose-500/30 via-pink-400/20 to-amber-300/30 border border-amber-200/50 flex items-center justify-center shadow-[0_0_35px_rgba(251,113,133,0.45)] animate-float-slow">
+                        <span class="text-5xl sm:text-6xl select-none">🧸</span>
+                    </div>
+                    <span class="absolute -top-4 text-3xl sm:text-4xl drop-shadow-[0_0_10px_rgba(253,230,138,0.8)] animate-bounce">👑</span>
+                    <span class="absolute -bottom-1 -right-2 text-2xl sm:text-3xl animate-pulse">💖</span>
+                    <span class="absolute -bottom-1 -left-2 text-2xl sm:text-3xl animate-pulse">🌸</span>
+                </div>
+                <span class="font-sans-light text-[11px] sm:text-xs uppercase tracking-[0.35em] text-amber-200/90 mt-4 bg-rose-950/60 px-4 py-1 rounded-full border border-amber-300/30">
+                    ✨ A Royal Sweet 16th Note For You ✨
+                </span>
+            </div>
+
+            <!-- Ornamental Divider -->
+            <div class="flex items-center justify-center gap-3 my-4 opacity-80">
+                <div class="h-[1px] w-16 sm:w-24 bg-gradient-to-r from-transparent to-amber-300"></div>
+                <span class="text-amber-300 text-lg">❖</span>
+                <div class="h-[1px] w-16 sm:w-24 bg-gradient-to-l from-transparent to-amber-300"></div>
+            </div>
+
+            <!-- The Special Translated Message in Grand Typography -->
+            <div class="my-6 sm:my-8 px-2">
+                <p class="font-playfair italic text-2xl sm:text-3xl md:text-4xl text-rose-50 leading-relaxed sm:leading-relaxed drop-shadow-md">
+                    <span class="text-amber-300 text-4xl font-serif leading-none mr-1">“</span>Everyone will wish you in a <span class="text-gold-shimmer font-semibold">special way</span> for your birthday this year,
+                </p>
+                <p class="font-cursive text-3xl sm:text-4xl md:text-5xl text-rose-300 mt-4 leading-snug gold-glow">
+                    but this is just a small wish from my side...”
+                </p>
+            </div>
+
+            <!-- Cute Mini Icon Row -->
+            <div class="flex items-center justify-center gap-4 text-xl sm:text-2xl my-6 opacity-90">
+                <span class="animate-bounce" style="animation-delay: 0.1s;">🌹</span>
+                <span class="animate-bounce" style="animation-delay: 0.2s;">🧸</span>
+                <span class="animate-bounce" style="animation-delay: 0.3s;">💖</span>
+                <span class="animate-bounce" style="animation-delay: 0.4s;">🎀</span>
+                <span class="animate-bounce" style="animation-delay: 0.5s;">🌸</span>
+            </div>
+
+            <!-- Grand Unwrap Button -->
+            <button id="surprise-btn" class="group relative inline-flex items-center justify-center px-8 sm:px-10 py-4 sm:py-5 bg-gradient-to-r from-rose-700 via-pink-600 to-rose-700 border-2 border-amber-200/70 text-white rounded-full font-playfair font-semibold tracking-wider text-lg sm:text-xl md:text-2xl hover:from-rose-600 hover:via-pink-500 hover:to-rose-600 transition-all duration-300 animate-pulse-glow transform hover:scale-105 active:scale-95 focus:outline-none overflow-hidden">
+                <span class="relative z-10 flex items-center gap-3">
+                    <span>Unwrap Your Surprise</span>
+                    <span class="text-2xl group-hover:rotate-12 transition-transform">🎁🧸✨</span>
+                </span>
+            </button>
+
+            <p class="font-sans-light text-[11px] text-rose-200/60 tracking-widest uppercase mt-4">
+                Tap with love 💖
+            </p>
+        </div>
+    </div>
+
+    <!-- ======================================================= -->
+    <!-- MAIN CONTENT (REVEALED AFTER CLICK)                     -->
+    <!-- ======================================================= -->
+    <div id="main-content" class="opacity-0 transition-opacity duration-1000 hidden">
+
+        <!-- Floating Hearts, Teddies, Flowers & Ribbons Container -->
+        <div id="hearts-container" class="fixed inset-0 pointer-events-none z-0 overflow-hidden"></div>
+
+        <!-- ======================================================= -->
+        <!-- SECTION 1: GRAND ROYAL HERO REVEAL                      -->
+        <!-- ======================================================= -->
+        <section class="relative w-full min-h-screen flex flex-col items-center justify-center z-10 px-4 py-16 overflow-hidden">
+            
+            <!-- Decorative Floating Corner Companions -->
+            <div class="absolute top-10 left-6 sm:left-16 text-4xl sm:text-6xl opacity-75 animate-float-slow pointer-events-none select-none">🧸</div>
+            <div class="absolute top-14 right-6 sm:right-16 text-4xl sm:text-6xl opacity-75 animate-float-reverse pointer-events-none select-none">🎀</div>
+            <div class="absolute bottom-24 left-8 sm:left-20 text-4xl sm:text-5xl opacity-75 animate-float-reverse pointer-events-none select-none">🌸</div>
+            <div class="absolute bottom-24 right-8 sm:right-20 text-4xl sm:text-5xl opacity-75 animate-float-slow pointer-events-none select-none">🌹</div>
+
+            <!-- Birthday Hero Centerpiece -->
+            <div id="birthday-text" class="flex flex-col items-center justify-center text-center px-4 z-10 opacity-0 max-w-4xl mx-auto">
+                
+                <!-- Crown & Sweet 16 Pill -->
+                <div class="mb-4 flex flex-col items-center">
+                    <span class="text-5xl sm:text-6xl mb-2 drop-shadow-[0_0_20px_rgba(253,230,138,0.8)] animate-bounce">👑</span>
+                    <span class="px-5 py-1.5 rounded-full bg-rose-950/70 border border-amber-300/40 text-amber-200 font-sans-light text-xs tracking-[0.35em] uppercase shadow-lg">
+                        ✨ Sweet Sixteen Princess ✨
+                    </span>
+                </div>
+
+                <!-- Happy 16th Birthday -->
+                <h3 class="font-cursive text-5xl sm:text-6xl md:text-7xl text-rose-200 mt-2 mb-3 gold-glow">
+                    Happy 16th Birthday
+                </h3>
+
+                <!-- PRADEEPA in Monumental Royal Letters -->
+                <div class="relative my-2">
+                    <h1 class="font-royal text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-gold-shimmer tracking-wider uppercase drop-shadow-[0_10px_25px_rgba(225,29,72,0.6)]">
+                        Pradeepa
+                    </h1>
+                    <!-- Cute Sticker Accents on Name -->
+                    <span class="absolute -top-4 -right-4 sm:-right-8 text-3xl sm:text-4xl animate-pulse">🦋</span>
+                    <span class="absolute -bottom-3 -left-4 sm:-left-8 text-3xl sm:text-4xl animate-bounce">🧸</span>
+                </div>
+
+                <!-- Ornamental Floral Line -->
+                <div class="flex items-center justify-center gap-3 my-6">
+                    <div class="h-[1px] w-16 sm:w-28 bg-gradient-to-r from-transparent via-rose-300 to-amber-200"></div>
+                    <span class="text-2xl">🌹💖🌹</span>
+                    <div class="h-[1px] w-16 sm:w-28 bg-gradient-to-l from-transparent via-rose-300 to-amber-200"></div>
+                </div>
+
+                <!-- Date Badge -->
+                <div class="inline-flex items-center gap-3 px-7 py-2.5 rounded-full bg-gradient-to-r from-rose-900/60 via-pink-900/60 to-rose-900/60 border border-rose-300/50 backdrop-blur-md shadow-[0_0_25px_rgba(251,113,133,0.35)]">
+                    <span>🎀</span>
+                    <p class="font-sans-light text-rose-100 tracking-[0.25em] text-xs sm:text-sm uppercase font-medium">
+                        October 16, 2026
+                    </p>
+                    <span>🎀</span>
+                </div>
+
+                <!-- Cute Subtitle -->
+                <p class="font-cursive text-2xl sm:text-3xl text-rose-300/90 mt-6">
+                    To the sweetest soul & my forever best friend 🧸🌸
+                </p>
+            </div>
+
+            <!-- Bouncing Down Scroll Button -->
+            <div id="scroll-arrow" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 opacity-0">
+                <a href="#story-section" class="group flex flex-col items-center text-rose-200 hover:text-amber-200 transition-colors duration-300">
+                    <span class="font-sans-light text-[10px] sm:text-xs tracking-[0.25em] uppercase mb-2 bg-rose-950/50 px-4 py-1.5 rounded-full border border-rose-400/30 group-hover:border-amber-300/60">
+                        Read Our Story 💖
+                    </span>
+                    <span class="text-2xl animate-bounce mt-1">↓</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- SECTION 2: THE STORY & SCATTERED POLAROIDS              -->
+        <!-- ======================================================= -->
+        <section id="story-section" class="relative z-10 w-full min-h-screen py-20 px-4 sm:px-8">
+            <div class="max-w-3xl mx-auto flex flex-col items-center text-center">
+                
+                <!-- Section Header -->
+                <div class="flex flex-col items-center mb-14">
+                    <div class="text-4xl sm:text-5xl mb-3 flex items-center gap-3">
+                        <span>🌸</span>
+                        <span>🧸</span>
+                        <span>🎀</span>
+                    </div>
+                    <h2 class="font-cursive text-4xl sm:text-5xl text-amber-200 gold-glow"> Chapters of Our Friendship </h2>
+                    <div class="h-0.5 w-32 bg-gradient-to-r from-transparent via-amber-300 to-transparent mt-3"></div>
+                </div>
+
+                <!-- Paragraph 1 inside Royal Glass Card -->
+                <div class="story-card rounded-3xl p-7 sm:p-10 mb-8 relative w-full">
+                    <span class="absolute -top-4 -left-3 text-3xl">🎀</span>
+                    <span class="absolute -top-4 -right-3 text-3xl">✨</span>
+                    <p class="text-xl sm:text-2xl md:text-3xl leading-relaxed text-rose-50 font-medium">
+                        It all started on that magical night of <span class="text-amber-200 font-semibold underline decoration-rose-400/60 decoration-wavy underline-offset-4">October 15, 2024, at exactly 10:55 PM.</span> Little did I know that a simple conversation would be the beginning of something so incredibly special. From that exact moment to this very day, you have become my absolute best friend, my confidante, and the most important person in my life. We clicked instantly, and looking back, I wouldn't trade that night for anything in the world.
+                    </p>
+                    <span class="absolute -bottom-4 right-6 text-2xl">🧸💖</span>
+                </div>
+
+                <!-- Scattered Photo 1 -->
+                <div class="polaroid -rotate-3 md:-rotate-6" title="Click to change or preview photo">
+                    <div class="washi-tape"></div>
+                    <span class="absolute -top-5 -right-5 text-4xl drop-shadow-md z-20">🧸</span>
+                    <span class="absolute -bottom-3 -left-4 text-3xl drop-shadow-md z-20">🌹</span>
+                    <img id="photo-1" src="WhatsApp Image 2026-11-02 at 6.32.20 PM (1).jpeg" alt="Pradeepa 1" onerror="this.src='https://placehold.co/400x500/ffe4e6/9f1239?text=Pradeepa+%E2%9C%A8%0A(Photo+1)'">
+                    <p class="font-cursive text-2xl text-rose-800 mt-3 mb-[-28px]">Where the magic began ✨</p>
+                </div>
+
+                <!-- Paragraph 2 inside Royal Glass Card -->
+                <div class="story-card rounded-3xl p-7 sm:p-10 mt-10 mb-8 relative w-full">
+                    <span class="absolute -top-4 -left-3 text-3xl">🌸</span>
+                    <span class="absolute -top-4 -right-3 text-3xl">🦋</span>
+                    <p class="text-xl sm:text-2xl md:text-3xl leading-relaxed text-rose-50 font-medium">
+                        We've shared so many stories, countless late-night talks, and secrets that only we know. Whether it’s your personal thoughts or mine, we've always found a safe space in each other. Every single day with you has given me unforgettable memories that I will cherish forever. You listen to me like no one else does, and you understand me in ways I can't even explain. Our bond is something I hold incredibly close to my heart.
+                    </p>
+                    <span class="absolute -bottom-4 left-6 text-2xl">🎀🌸</span>
+                </div>
+
+                <!-- Scattered Photo 2 -->
+                <div class="polaroid rotate-3 md:rotate-6" title="Click to change or preview photo">
+                    <div class="washi-tape"></div>
+                    <span class="absolute -top-5 -left-5 text-4xl drop-shadow-md z-20">🎀</span>
+                    <span class="absolute -bottom-3 -right-4 text-3xl drop-shadow-md z-20">🧸</span>
+                    <img id="photo-2" src="WhatsApp Image 2026-11-02 at 6.32.20 PM.jpeg" alt="Pradeepa 2" onerror="this.src='https://placehold.co/400x500/fce7f3/9d174d?text=Sweet+Memories+%F0%9F%8C%B8%0A(Photo+2)'">
+                    <p class="font-cursive text-2xl text-rose-800 mt-3 mb-[-28px]">Unforgettable Memories 🌸</p>
+                </div>
+
+                <!-- Paragraph 3 inside Royal Glass Card -->
+                <div class="story-card rounded-3xl p-7 sm:p-10 mt-10 mb-8 relative w-full">
+                    <span class="absolute -top-4 -left-3 text-3xl">🧸</span>
+                    <span class="absolute -top-4 -right-3 text-3xl">🌹</span>
+                    <p class="text-xl sm:text-2xl md:text-3xl leading-relaxed text-rose-50 font-medium">
+                        I absolutely love the way you talk, the way you express yourself, and just everything about you. Your presence brings so much warmth, comfort, and happiness into my world. Through all the ups and downs, our friendship has only grown stronger and more beautiful. You are truly one of a kind, Pradeepa, and I am so incredibly lucky to have you by my side. You make everything better just by being you.
+                    </p>
+                    <span class="absolute -bottom-4 right-6 text-2xl">👑✨</span>
+                </div>
+
+                <!-- Scattered Photo 3 & 4 Container -->
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-14 my-8 w-full">
+                    <!-- Scattered Photo 3 -->
+                    <div class="polaroid -rotate-3 md:-rotate-6 w-full max-w-[290px]" title="Click to change or preview photo">
+                        <div class="washi-tape"></div>
+                        <span class="absolute -top-4 -left-4 text-3xl drop-shadow-md z-20">🦋</span>
+                        <span class="absolute -bottom-3 -right-3 text-3xl drop-shadow-md z-20">🌸</span>
+                        <img id="photo-3" src="WhatsApp Image 2026-11-02 at 6.32.21 PM (1).jpeg" alt="Pradeepa 3" onerror="this.src='https://placehold.co/400x500/ffe4e6/9f1239?text=Pure+Sunshine+%F0%9F%92%96%0A(Photo+3)'">
+                        <p class="font-cursive text-2xl text-rose-800 mt-3 mb-[-28px]">Pure Sunshine 💖</p>
+                    </div>
+
+                    <!-- Scattered Photo 4 -->
+                    <div class="polaroid rotate-3 md:rotate-6 w-full max-w-[290px]" title="Click to change or preview photo">
+                        <div class="washi-tape"></div>
+                        <span class="absolute -top-4 -right-4 text-3xl drop-shadow-md z-20">👑</span>
+                        <span class="absolute -bottom-3 -left-3 text-3xl drop-shadow-md z-20">🧸</span>
+                        <img id="photo-4" src="WhatsApp Image 2026-11-02 at 6.32.21 PM (2).jpeg" alt="Pradeepa 4" onerror="this.src='https://placehold.co/400x500/fce7f3/9d174d?text=Bestie+Forever+%F0%9F%A7%B8%0A(Photo+4)'">
+                        <p class="font-cursive text-2xl text-rose-800 mt-3 mb-[-28px]">Sweetest Soul 🧸</p>
+                    </div>
+                </div>
+
+                <!-- Paragraph 4 inside Royal Glass Card -->
+                <div class="story-card rounded-3xl p-7 sm:p-10 mt-10 mb-8 relative w-full">
+                    <span class="absolute -top-4 -left-3 text-3xl">👑</span>
+                    <span class="absolute -top-4 -right-3 text-3xl">🎀</span>
+                    <p class="text-xl sm:text-2xl md:text-3xl leading-relaxed text-rose-50 font-medium">
+                        As you celebrate your 16th birthday today on <span class="text-amber-200 font-semibold">October 16, 2026</span>, I want you to know how deeply I appreciate you. I hope this year brings you as much joy, love, and endless smiles as you have brought into my life. Happy Birthday to the most amazing best friend I could ever ask for. Here’s to a lifetime of sharing secrets, making memories, and staying this close forever.
+                    </p>
+                    <span class="absolute -bottom-4 left-6 text-2xl">🌹🧸</span>
+                </div>
+
+                <!-- Scattered Photo 5 -->
+                <div class="polaroid -rotate-2 md:-rotate-3 mb-14" title="Click to change or preview photo">
+                    <div class="washi-tape"></div>
+                    <span class="absolute -top-5 -right-5 text-4xl drop-shadow-md z-20">🎀</span>
+                    <span class="absolute -bottom-3 -left-4 text-3xl drop-shadow-md z-20">💖</span>
+                    <img id="photo-5" src="WhatsApp Image 2026-11-02 at 6.32.21 PM.jpeg" alt="Pradeepa 5" onerror="this.src='https://placehold.co/400x500/ffe4e6/9f1239?text=Happy+16th+Pradeepa+%F0%9F%91%91%0A(Photo+5)'">
+                    <p class="font-cursive text-2xl text-rose-800 mt-3 mb-[-28px]">Happy Sweet 16th! 👑</p>
+                </div>
+
+                <!-- The Big Thank You Card -->
+                <div class="royal-card rounded-3xl p-8 sm:p-12 mt-4 mb-16 relative w-full">
+                    <div class="text-4xl mb-4">🧸💐🎀</div>
+                    <p class="text-xl sm:text-2xl md:text-3xl leading-relaxed text-rose-50 font-medium">
+                        Finally, I just want to say a massive <span class="text-gold-shimmer font-bold uppercase tracking-wider">Thank You</span>. Thank you for being such an amazing friend over the past couple of years. You have been a beautiful part of my journey, and having you by my side means the world to me.
+                    </p>
+                </div>
+
+                <!-- ======================================================= -->
+                <!-- INTERACTIVE SWEET 16 CAKE & TEDDY HUG SURPRISE          -->
+                <!-- ======================================================= -->
+                <div class="royal-card rounded-3xl p-8 sm:p-10 my-8 w-full max-w-xl flex flex-col items-center text-center">
+                    <span class="font-sans-light text-xs uppercase tracking-[0.3em] text-amber-200 mb-2">✨ Make A Sweet 16th Wish ✨</span>
+                    <h3 class="font-cursive text-4xl sm:text-5xl text-rose-200 mb-6">Blow the Candle & Grab a Teddy Hug!</h3>
+
+                    <!-- Interactive Candle & Teddy Display -->
+                    <div class="relative flex items-center justify-center gap-6 my-4">
+                        <span id="teddy-left" class="text-5xl sm:text-6xl transition-transform duration-500 animate-float-slow select-none">🧸</span>
+                        
+                        <!-- Birthday Cake with Flickering Flame -->
+                        <div id="cake-box" class="relative flex flex-col items-center cursor-pointer select-none group" onclick="blowCandle()">
+                            <!-- Flame -->
+                            <div id="candle-flame" class="flame text-3xl sm:text-4xl mb-[-10px] z-20 drop-shadow-[0_0_15px_#fbbf24]">🔥</div>
+                            <!-- Cake Emoji -->
+                            <div class="text-6xl sm:text-7xl group-hover:scale-110 transition-transform">🎂</div>
+                        </div>
+
+                        <span id="teddy-right" class="text-5xl sm:text-6xl transition-transform duration-500 animate-float-reverse select-none">🎀</span>
+                    </div>
+
+                    <p id="wish-status" class="font-playfair italic text-lg sm:text-xl text-amber-100/90 mt-3 mb-6">
+                        Tap the button below to blow out your 16th birthday candle! 🕯️✨
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center gap-4">
+                        <button onclick="blowCandle()" id="candle-btn" class="px-7 py-3 bg-gradient-to-r from-amber-500 to-rose-500 hover:from-amber-400 hover:to-rose-400 text-white font-sans-light text-xs sm:text-sm uppercase tracking-widest font-semibold rounded-full shadow-[0_0_25px_rgba(251,191,36,0.5)] transition-all transform hover:scale-105 active:scale-95">
+                            🕯️ Blow the Candle ✨
+                        </button>
+                        <button onclick="sendTeddyHug()" class="px-7 py-3 bg-rose-900/60 hover:bg-rose-800 border border-rose-300/50 text-rose-100 font-sans-light text-xs sm:text-sm uppercase tracking-widest font-semibold rounded-full shadow-lg transition-all transform hover:scale-105 active:scale-95">
+                            🧸 Send Teddy & Rose Shower 🌹
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Footer / Closing -->
+                <div class="mt-16 pb-20 flex flex-col items-center">
+                    <div class="flex items-center gap-3 text-3xl mb-4">
+                        <span>🌹</span><span>🧸</span><span>👑</span><span>🎀</span><span>🌸</span>
+                    </div>
+                    <h2 class="font-cursive text-5xl sm:text-6xl text-rose-300 mb-3 gold-glow">Always by your side,</h2>
+                    <h3 class="font-royal text-xl sm:text-2xl text-amber-200 tracking-[0.25em] uppercase">Your Best Friend 💖</h3>
+                </div>
+
+            </div>
+        </section>
+
+    </div> <!-- End Main Content -->
+
+    <!-- Hidden File Input so user can click any polaroid to test/preview with local photos -->
+    <input type="file" id="photo-uploader" accept="image/*" class="hidden">
+
+    <!-- Background Particles, Confetti & Interactive Scripts -->
+    <script>
+        // Intro Button Logic with Celebration Burst
+        document.getElementById('surprise-btn').addEventListener('click', function() {
+            const introScreen = document.getElementById('intro-screen');
+            const mainContent = document.getElementById('main-content');
+            const bdayText = document.getElementById('birthday-text');
+            const scrollArrow = document.getElementById('scroll-arrow');
+            
+            // Burst of cute emojis immediately on click
+            burstCelebration(45);
+
+            // Fade out intro
+            introScreen.style.opacity = '0';
+            introScreen.style.transform = 'scale(1.06)';
+            
+            setTimeout(() => {
+                introScreen.style.display = 'none';
+                
+                // Show main content and allow scrolling
+                mainContent.classList.remove('hidden');
+                document.body.classList.remove('overflow-hidden');
+                
+                // Trigger reflow
+                void mainContent.offsetWidth; 
+                
+                mainContent.classList.remove('opacity-0');
+                
+                // Trigger text animations
+                bdayText.classList.add('animate-birthday');
+                scrollArrow.classList.add('animate-birthday');
+                
+                // Start continuous background floating teddies, flowers & hearts
+                createFloatingElements();
+            }, 850);
+        });
+
+        // Continuous Floating Cute Background Symbols
+        function createFloatingElements() {
+            const container = document.getElementById('hearts-container');
+            const cuteSymbols = ['🧸', '🌹', '🌸', '🎀', '💖', '✨', '🦋', '👑', '🌷', '💝'];
+            const numParticles = 42;
+
+            for (let i = 0; i < numParticles; i++) {
+                const item = document.createElement('div');
+                item.classList.add('heart-particle');
+                
+                const randomSymbol = cuteSymbols[Math.floor(Math.random() * cuteSymbols.length)];
+                const randomLeft = Math.random() * 100;
+                const randomDuration = Math.random() * 14 + 11; // 11s to 25s
+                const randomDelay = Math.random() * 12;
+                const randomSize = Math.random() * 1.1 + 0.9; // 0.9rem to 2.0rem
+
+                item.innerText = randomSymbol;
+                item.style.left = `${randomLeft}vw`;
+                item.style.animationDuration = `${randomDuration}s`;
+                item.style.animationDelay = `${randomDelay}s`;
+                item.style.fontSize = `${randomSize}rem`;
+
+                container.appendChild(item);
+            }
+        }
+
+        // Burst of Teddies, Roses, Ribbons & Sparkles
+        function burstCelebration(count = 35) {
+            const symbols = ['🧸', '🌹', '🌸', '🎀', '💖', '✨', '👑', '🦋', '🎉'];
+            for (let i = 0; i < count; i++) {
+                const particle = document.createElement('div');
+                particle.innerText = symbols[Math.floor(Math.random() * symbols.length)];
+                particle.style.position = 'fixed';
+                particle.style.left = '50vw';
+                particle.style.top = '50vh';
+                particle.style.fontSize = (Math.random() * 1.5 + 1.2) + 'rem';
+                particle.style.pointerEvents = 'none';
+                particle.style.zIndex = '9999';
+                particle.style.transition = 'all 1.6s cubic-bezier(0.16, 1, 0.3, 1)';
+                document.body.appendChild(particle);
+
+                const angle = Math.random() * Math.PI * 2;
+                const distance = Math.random() * 45 + 10;
+                const destX = Math.cos(angle) * distance;
+                const destY = Math.sin(angle) * distance;
+
+                requestAnimationFrame(() => {
+                    particle.style.transform = `translate(${destX}vw, ${destY}vh) rotate(${Math.random() * 360}deg) scale(0.3)`;
+                    particle.style.opacity = '0';
+                });
+
+                setTimeout(() => particle.remove(), 1700);
+            }
+        }
+
+        // Interactive Blow the Candle Feature
+        let candleBlown = false;
+        function blowCandle() {
+            const flame = document.getElementById('candle-flame');
+            const status = document.getElementById('wish-status');
+            const btn = document.getElementById('candle-btn');
+
+            if (!candleBlown) {
+                candleBlown = true;
+                flame.innerText = '✨';
+                flame.classList.remove('flame');
+                status.innerHTML = '🎉 <span class="text-amber-300 font-semibold">Yay! Happy 16th Birthday, Pradeepa!</span> May all your sweetest dreams come true! 🧸💖🌸';
+                btn.innerText = '🔥 Relight Candle';
+                burstCelebration(50);
+            } else {
+                candleBlown = false;
+                flame.innerText = '🔥';
+                flame.classList.add('flame');
+                status.innerText = 'Tap the button below to blow out your 16th birthday candle! 🕯️✨';
+                btn.innerText = '🕯️ Blow the Candle ✨';
+            }
+        }
+
+        // Send Virtual Teddy & Rose Shower
+        function sendTeddyHug() {
+            const status = document.getElementById('wish-status');
+            status.innerHTML = '🧸💖 <span class="text-rose-200 font-semibold">Sending you the biggest warmest bestie bear hug & a thousand roses!</span> 🌹🎀';
+            burstCelebration(45);
+        }
+
+        // Interactive Sparkle Trail on Mouse / Touch Move
+        let lastSparkleTime = 0;
+        const trailSymbols = ['✨', '💖', '🌸', '🎀'];
+        window.addEventListener('pointermove', function(e) {
+            const now = Date.now();
+            if (now - lastSparkleTime < 75) return;
+            lastSparkleTime = now;
+
+            const sp = document.createElement('span');
+            sp.className = 'sparkle-trail';
+            sp.innerText = trailSymbols[Math.floor(Math.random() * trailSymbols.length)];
+            sp.style.left = (e.clientX - 8) + 'px';
+            sp.style.top = (e.clientY - 8) + 'px';
+            sp.style.fontSize = (Math.random() * 0.6 + 0.75) + 'rem';
+            document.body.appendChild(sp);
+
+            setTimeout(() => sp.remove(), 900);
+        });
+
+        // Optional Click-to-Preview Photo on any Polaroid
+        let activeImgElement = null;
+        const uploader = document.getElementById('photo-uploader');
+        document.querySelectorAll('.polaroid img').forEach(img => {
+            img.addEventListener('click', function() {
+                activeImgElement = this;
+                uploader.click();
+            });
+        });
+
+        uploader.addEventListener('change', function(e) {
+            if (e.target.files && e.target.files[0] && activeImgElement) {
+                const reader = new FileReader();
+                reader.onload = function(ev) {
+                    activeImgElement.src = ev.target.result;
+                };
+                reader.readAsDataURL(e.target.files[0]);
+            }
+        });
+    </script>
+</body>
+</html>
